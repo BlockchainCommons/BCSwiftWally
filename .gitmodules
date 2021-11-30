@@ -1,3 +1,4 @@
 [submodule "deps/bc-libwally-core"]
 	path = deps/bc-libwally-core
 	url = https://github.com/BlockchainCommons/bc-libwally-core.git
+    ignore = dirty

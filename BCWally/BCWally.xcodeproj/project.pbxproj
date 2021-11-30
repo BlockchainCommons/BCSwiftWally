@@ -40,7 +40,6 @@
 		030A63D625035ED900A1D27E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		030A63DB25035EDA00A1D27E /* BCWallyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BCWallyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		030A63E225035EDA00A1D27E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		030A63EF25036DDF00A1D27E /* CBCWally.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CBCWally.xcframework; path = ../build/CBCWally.xcframework; sourceTree = "<group>"; };
 		797BB15425A7E75900FD5140 /* wally_transaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wally_transaction.h; path = "../../build/arm64-apple-darwin/wallycore/include/wally_transaction.h"; sourceTree = "<group>"; };
 		797BB15525A7E75900FD5140 /* wally_bip39.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wally_bip39.h; path = "../../build/arm64-apple-darwin/wallycore/include/wally_bip39.h"; sourceTree = "<group>"; };
 		797BB15625A7E75900FD5140 /* wally_bip38.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wally_bip38.h; path = "../../build/arm64-apple-darwin/wallycore/include/wally_bip38.h"; sourceTree = "<group>"; };
@@ -117,7 +116,6 @@
 		030A63EE25036DDF00A1D27E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				030A63EF25036DDF00A1D27E /* CBCWally.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -550,7 +548,7 @@
 			repositoryURL = "https://github.com/WolfMcNally/WolfBase.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 2.3.3;
+				minimumVersion = 2.4.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

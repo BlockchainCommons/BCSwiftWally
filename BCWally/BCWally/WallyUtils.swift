@@ -155,10 +155,10 @@ extension Wally {
 }
 
 extension Wally {
-    public static func hdKey(bip39Seed seedData: Data, network: Network) -> WallyExtKey? {
+    public static func hdKey(bip39Seed: Data, network: Network) -> WallyExtKey? {
         let flags = network.wallyBIP32Version(isPrivate: true)
         var key = WallyExtKey()
-        let result = seedData.withUnsafeByteBuffer { buf in
+        let result = bip39Seed.withUnsafeByteBuffer { buf in
             bip32_key_from_seed(buf.baseAddress, buf.count, flags, 0, &key)
         }
         guard result == WALLY_OK else {

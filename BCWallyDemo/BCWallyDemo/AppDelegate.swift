@@ -6,16 +6,18 @@
 //
 
 import UIKit
-
 import BCWally
+import WolfBase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         wally_init(0);
-        let hdKey = HDKey(base58: "xpub6ASuArnXKPbfEwhqN6e3mwBcDTgzisQN1wXN9BJcM47sSikHjJf3UFHKkNAWbWMiGj7Wf5uMash7SyYq527Hqck2AxYysAA7xmALppuCkwQ")!
-        print(hdKey)
+        let data = Data(hex: "1673a0b7da12c9a7252f5c93a1376a8f")!
+        let bip39 = Wally.bip39Encode(data: data)
+        print(bip39)
+        // biology other combine reflect clutch squeeze net twist neck answer survey butter
         return true
     }
 

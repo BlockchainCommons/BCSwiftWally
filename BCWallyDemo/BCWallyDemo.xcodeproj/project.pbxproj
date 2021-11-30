@@ -22,6 +22,8 @@
 		0329399B25377C4700E52AD5 /* BCWally.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 03D92E632503B6C9005BA9A7 /* BCWally.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		03D92E642503B6C9005BA9A7 /* BCWally.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D92E632503B6C9005BA9A7 /* BCWally.xcframework */; };
 		03D92E652503B6C9005BA9A7 /* BCWally.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 03D92E632503B6C9005BA9A7 /* BCWally.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		7964076C2755F27800BECF76 /* WolfBase in Frameworks */ = {isa = PBXBuildFile; productRef = 7964076B2755F27800BECF76 /* WolfBase */; };
+		79E967172755EECD000621AD /* WolfBase in Frameworks */ = {isa = PBXBuildFile; productRef = 79E967162755EECD000621AD /* WolfBase */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -67,7 +69,6 @@
 		0329398C25377C2200E52AD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0329398E25377C2200E52AD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0329398F25377C2200E52AD5 /* BCWallyDemo_Mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BCWallyDemo_Mac.entitlements; sourceTree = "<group>"; };
-		03D92E602503B46A005BA9A7 /* CBCWally.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CBCWally.xcframework; path = ../build/CBCWally.xcframework; sourceTree = "<group>"; };
 		03D92E632503B6C9005BA9A7 /* BCWally.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = BCWally.xcframework; path = ../build/BCWally.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,6 +78,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03D92E642503B6C9005BA9A7 /* BCWally.xcframework in Frameworks */,
+				79E967172755EECD000621AD /* WolfBase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0329399A25377C4700E52AD5 /* BCWally.xcframework in Frameworks */,
+				7964076C2755F27800BECF76 /* WolfBase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +140,6 @@
 			isa = PBXGroup;
 			children = (
 				03D92E632503B6C9005BA9A7 /* BCWally.xcframework */,
-				03D92E602503B46A005BA9A7 /* CBCWally.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -181,6 +183,9 @@
 			dependencies = (
 			);
 			name = BCWallyDemo;
+			packageProductDependencies = (
+				79E967162755EECD000621AD /* WolfBase */,
+			);
 			productName = BCWallyDemo;
 			productReference = 030A641825038A4300A1D27E /* BCWallyDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -199,6 +204,9 @@
 			dependencies = (
 			);
 			name = "BCWallyDemo-Mac";
+			packageProductDependencies = (
+				7964076B2755F27800BECF76 /* WolfBase */,
+			);
 			productName = "BCWallyDemo-Mac";
 			productReference = 0329398025377C2000E52AD5 /* BCWallyDemo-Mac.app */;
 			productType = "com.apple.product-type.application";
@@ -229,6 +237,9 @@
 				Base,
 			);
 			mainGroup = 030A640F25038A4300A1D27E;
+			packageReferences = (
+				79E967152755EECD000621AD /* XCRemoteSwiftPackageReference "WolfBase" */,
+			);
 			productRefGroup = 030A641925038A4300A1D27E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -431,7 +442,7 @@
 				DEVELOPMENT_TEAM = YZHG975W3A;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = BCWallyDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -456,7 +467,7 @@
 				DEVELOPMENT_TEAM = YZHG975W3A;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = BCWallyDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -488,7 +499,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				OTHER_CODE_SIGN_FLAGS = "--deep";
 				PRODUCT_BUNDLE_IDENTIFIER = "arciem.BCWallyDemo-Mac";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -516,7 +527,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				OTHER_CODE_SIGN_FLAGS = "--deep";
 				PRODUCT_BUNDLE_IDENTIFIER = "arciem.BCWallyDemo-Mac";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -557,6 +568,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		79E967152755EECD000621AD /* XCRemoteSwiftPackageReference "WolfBase" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WolfMcNally/WolfBase";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7964076B2755F27800BECF76 /* WolfBase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 79E967152755EECD000621AD /* XCRemoteSwiftPackageReference "WolfBase" */;
+			productName = WolfBase;
+		};
+		79E967162755EECD000621AD /* WolfBase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 79E967152755EECD000621AD /* XCRemoteSwiftPackageReference "WolfBase" */;
+			productName = WolfBase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 030A641025038A4300A1D27E /* Project object */;
 }

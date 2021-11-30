@@ -1,0 +1,562 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		030A641C25038A4300A1D27E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030A641B25038A4300A1D27E /* AppDelegate.swift */; };
+		030A641E25038A4300A1D27E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030A641D25038A4300A1D27E /* SceneDelegate.swift */; };
+		030A642025038A4300A1D27E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030A641F25038A4300A1D27E /* ContentView.swift */; };
+		030A642225038A4500A1D27E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 030A642125038A4500A1D27E /* Assets.xcassets */; };
+		030A642525038A4500A1D27E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 030A642425038A4500A1D27E /* Preview Assets.xcassets */; };
+		030A642825038A4500A1D27E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 030A642625038A4500A1D27E /* LaunchScreen.storyboard */; };
+		0329398325377C2000E52AD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0329398225377C2000E52AD5 /* AppDelegate.swift */; };
+		0329398525377C2000E52AD5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0329398425377C2000E52AD5 /* ContentView.swift */; };
+		0329398725377C2100E52AD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0329398625377C2100E52AD5 /* Assets.xcassets */; };
+		0329398A25377C2100E52AD5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0329398925377C2100E52AD5 /* Preview Assets.xcassets */; };
+		0329398D25377C2200E52AD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0329398B25377C2100E52AD5 /* Main.storyboard */; };
+		0329399A25377C4700E52AD5 /* BCWally.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D92E632503B6C9005BA9A7 /* BCWally.xcframework */; };
+		0329399B25377C4700E52AD5 /* BCWally.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 03D92E632503B6C9005BA9A7 /* BCWally.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		03D92E642503B6C9005BA9A7 /* BCWally.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D92E632503B6C9005BA9A7 /* BCWally.xcframework */; };
+		03D92E652503B6C9005BA9A7 /* BCWally.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 03D92E632503B6C9005BA9A7 /* BCWally.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		030A64482503968C00A1D27E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				03D92E652503B6C9005BA9A7 /* BCWally.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0329399925377C4500E52AD5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0329399B25377C4700E52AD5 /* BCWally.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		030A641825038A4300A1D27E /* BCWallyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BCWallyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		030A641B25038A4300A1D27E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		030A641D25038A4300A1D27E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		030A641F25038A4300A1D27E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		030A642125038A4500A1D27E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		030A642425038A4500A1D27E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		030A642725038A4500A1D27E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		030A642925038A4500A1D27E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		030A642F25038A5500A1D27E /* BCWallyDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BCWallyDemo.entitlements; sourceTree = "<group>"; };
+		0329398025377C2000E52AD5 /* BCWallyDemo-Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BCWallyDemo-Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0329398225377C2000E52AD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0329398425377C2000E52AD5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0329398625377C2100E52AD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0329398925377C2100E52AD5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0329398C25377C2200E52AD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0329398E25377C2200E52AD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0329398F25377C2200E52AD5 /* BCWallyDemo_Mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BCWallyDemo_Mac.entitlements; sourceTree = "<group>"; };
+		03D92E602503B46A005BA9A7 /* CBCWally.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CBCWally.xcframework; path = ../build/CBCWally.xcframework; sourceTree = "<group>"; };
+		03D92E632503B6C9005BA9A7 /* BCWally.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = BCWally.xcframework; path = ../build/BCWally.xcframework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		030A641525038A4300A1D27E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03D92E642503B6C9005BA9A7 /* BCWally.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0329397D25377C2000E52AD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0329399A25377C4700E52AD5 /* BCWally.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		030A640F25038A4300A1D27E = {
+			isa = PBXGroup;
+			children = (
+				030A641A25038A4300A1D27E /* BCWallyDemo */,
+				0329398125377C2000E52AD5 /* BCWallyDemo-Mac */,
+				030A641925038A4300A1D27E /* Products */,
+				030A64442503968C00A1D27E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		030A641925038A4300A1D27E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				030A641825038A4300A1D27E /* BCWallyDemo.app */,
+				0329398025377C2000E52AD5 /* BCWallyDemo-Mac.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		030A641A25038A4300A1D27E /* BCWallyDemo */ = {
+			isa = PBXGroup;
+			children = (
+				030A642F25038A5500A1D27E /* BCWallyDemo.entitlements */,
+				030A641B25038A4300A1D27E /* AppDelegate.swift */,
+				030A641D25038A4300A1D27E /* SceneDelegate.swift */,
+				030A641F25038A4300A1D27E /* ContentView.swift */,
+				030A642125038A4500A1D27E /* Assets.xcassets */,
+				030A642625038A4500A1D27E /* LaunchScreen.storyboard */,
+				030A642925038A4500A1D27E /* Info.plist */,
+				030A642325038A4500A1D27E /* Preview Content */,
+			);
+			path = BCWallyDemo;
+			sourceTree = "<group>";
+		};
+		030A642325038A4500A1D27E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				030A642425038A4500A1D27E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		030A64442503968C00A1D27E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03D92E632503B6C9005BA9A7 /* BCWally.xcframework */,
+				03D92E602503B46A005BA9A7 /* CBCWally.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0329398125377C2000E52AD5 /* BCWallyDemo-Mac */ = {
+			isa = PBXGroup;
+			children = (
+				0329398225377C2000E52AD5 /* AppDelegate.swift */,
+				0329398425377C2000E52AD5 /* ContentView.swift */,
+				0329398625377C2100E52AD5 /* Assets.xcassets */,
+				0329398B25377C2100E52AD5 /* Main.storyboard */,
+				0329398E25377C2200E52AD5 /* Info.plist */,
+				0329398F25377C2200E52AD5 /* BCWallyDemo_Mac.entitlements */,
+				0329398825377C2100E52AD5 /* Preview Content */,
+			);
+			path = "BCWallyDemo-Mac";
+			sourceTree = "<group>";
+		};
+		0329398825377C2100E52AD5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0329398925377C2100E52AD5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		030A641725038A4300A1D27E /* BCWallyDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 030A642C25038A4500A1D27E /* Build configuration list for PBXNativeTarget "BCWallyDemo" */;
+			buildPhases = (
+				030A641425038A4300A1D27E /* Sources */,
+				030A641525038A4300A1D27E /* Frameworks */,
+				030A641625038A4300A1D27E /* Resources */,
+				030A64482503968C00A1D27E /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BCWallyDemo;
+			productName = BCWallyDemo;
+			productReference = 030A641825038A4300A1D27E /* BCWallyDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0329397F25377C2000E52AD5 /* BCWallyDemo-Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0329399225377C2200E52AD5 /* Build configuration list for PBXNativeTarget "BCWallyDemo-Mac" */;
+			buildPhases = (
+				0329397C25377C2000E52AD5 /* Sources */,
+				0329397D25377C2000E52AD5 /* Frameworks */,
+				0329397E25377C2000E52AD5 /* Resources */,
+				0329399925377C4500E52AD5 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BCWallyDemo-Mac";
+			productName = "BCWallyDemo-Mac";
+			productReference = 0329398025377C2000E52AD5 /* BCWallyDemo-Mac.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		030A641025038A4300A1D27E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					030A641725038A4300A1D27E = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					0329397F25377C2000E52AD5 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 030A641325038A4300A1D27E /* Build configuration list for PBXProject "BCWallyDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 030A640F25038A4300A1D27E;
+			productRefGroup = 030A641925038A4300A1D27E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				030A641725038A4300A1D27E /* BCWallyDemo */,
+				0329397F25377C2000E52AD5 /* BCWallyDemo-Mac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		030A641625038A4300A1D27E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				030A642825038A4500A1D27E /* LaunchScreen.storyboard in Resources */,
+				030A642525038A4500A1D27E /* Preview Assets.xcassets in Resources */,
+				030A642225038A4500A1D27E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0329397E25377C2000E52AD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0329398D25377C2200E52AD5 /* Main.storyboard in Resources */,
+				0329398A25377C2100E52AD5 /* Preview Assets.xcassets in Resources */,
+				0329398725377C2100E52AD5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		030A641425038A4300A1D27E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				030A641C25038A4300A1D27E /* AppDelegate.swift in Sources */,
+				030A641E25038A4300A1D27E /* SceneDelegate.swift in Sources */,
+				030A642025038A4300A1D27E /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0329397C25377C2000E52AD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0329398525377C2000E52AD5 /* ContentView.swift in Sources */,
+				0329398325377C2000E52AD5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		030A642625038A4500A1D27E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				030A642725038A4500A1D27E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		0329398B25377C2100E52AD5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0329398C25377C2200E52AD5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		030A642A25038A4500A1D27E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		030A642B25038A4500A1D27E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		030A642D25038A4500A1D27E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BCWallyDemo/BCWallyDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"BCWallyDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = YZHG975W3A;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = BCWallyDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_CODE_SIGN_FLAGS = "--deep";
+				PRODUCT_BUNDLE_IDENTIFIER = blockchaincommons.BCWallyDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		030A642E25038A4500A1D27E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BCWallyDemo/BCWallyDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"BCWallyDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = YZHG975W3A;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = BCWallyDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_CODE_SIGN_FLAGS = "--deep";
+				PRODUCT_BUNDLE_IDENTIFIER = blockchaincommons.BCWallyDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0329399025377C2200E52AD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "BCWallyDemo-Mac/BCWallyDemo_Mac.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"BCWallyDemo-Mac/Preview Content\"";
+				DEVELOPMENT_TEAM = YZHG975W3A;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "BCWallyDemo-Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_CODE_SIGN_FLAGS = "--deep";
+				PRODUCT_BUNDLE_IDENTIFIER = "arciem.BCWallyDemo-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0329399125377C2200E52AD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "BCWallyDemo-Mac/BCWallyDemo_Mac.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"BCWallyDemo-Mac/Preview Content\"";
+				DEVELOPMENT_TEAM = YZHG975W3A;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "BCWallyDemo-Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_CODE_SIGN_FLAGS = "--deep";
+				PRODUCT_BUNDLE_IDENTIFIER = "arciem.BCWallyDemo-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		030A641325038A4300A1D27E /* Build configuration list for PBXProject "BCWallyDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				030A642A25038A4500A1D27E /* Debug */,
+				030A642B25038A4500A1D27E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		030A642C25038A4500A1D27E /* Build configuration list for PBXNativeTarget "BCWallyDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				030A642D25038A4500A1D27E /* Debug */,
+				030A642E25038A4500A1D27E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0329399225377C2200E52AD5 /* Build configuration list for PBXNativeTarget "BCWallyDemo-Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0329399025377C2200E52AD5 /* Debug */,
+				0329399125377C2200E52AD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 030A641025038A4300A1D27E /* Project object */;
+}

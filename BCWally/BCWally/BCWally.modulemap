@@ -1,0 +1,7 @@
+framework module BCWally {
+  umbrella header "BCWally.h"
+
+  export *
+  module * { export * }
+
+}

@@ -7,6 +7,7 @@
 
 import Foundation
 
+@frozen
 public enum Network: UInt32, CaseIterable, Equatable {
     case mainnet = 0
     case testnet = 1
@@ -52,6 +53,17 @@ extension Network {
             return UInt32(isPrivate ? BIP32_VER_MAIN_PRIVATE : BIP32_VER_MAIN_PUBLIC)
         case .testnet:
             return UInt32(isPrivate ? BIP32_VER_TEST_PRIVATE : BIP32_VER_TEST_PUBLIC)
+        }
+    }
+}
+
+extension Network {
+    public var segwitFamily: String {
+        switch self {
+        case .mainnet:
+            return "bc"
+        case .testnet:
+            return "tb"
         }
     }
 }

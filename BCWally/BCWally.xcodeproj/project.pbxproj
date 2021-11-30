@@ -9,6 +9,16 @@
 /* Begin PBXBuildFile section */
 		030A63DC25035EDA00A1D27E /* BCWally.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 030A63D225035ED900A1D27E /* BCWally.framework */; };
 		030A63E325035EDA00A1D27E /* BCWally.h in Headers */ = {isa = PBXBuildFile; fileRef = 030A63D525035ED900A1D27E /* BCWally.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7964076E2756177A00BECF76 /* WallyExtKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7964076D2756177900BECF76 /* WallyExtKey.swift */; };
+		79640770275617B600BECF76 /* WallyECKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7964076F275617B600BECF76 /* WallyECKey.swift */; };
+		79640772275617D000BECF76 /* WallyHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79640771275617D000BECF76 /* WallyHash.swift */; };
+		796407742756180C00BECF76 /* WallyBIP39.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796407732756180C00BECF76 /* WallyBIP39.swift */; };
+		796407762756194A00BECF76 /* WallyAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796407752756194A00BECF76 /* WallyAddress.swift */; };
+		7964077827561B9300BECF76 /* WallyBase58.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7964077727561B9300BECF76 /* WallyBase58.swift */; };
+		7964077A27561C5900BECF76 /* WallyWIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7964077927561C5900BECF76 /* WallyWIF.swift */; };
+		7964077C27561CA200BECF76 /* WallyPSBT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7964077B27561CA200BECF76 /* WallyPSBT.swift */; };
+		7964077E27561D2E00BECF76 /* WallyTx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7964077D27561D2E00BECF76 /* WallyTx.swift */; };
+		7964078027561F5A00BECF76 /* WallyScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7964077F27561F5A00BECF76 /* WallyScript.swift */; };
 		796FE5DB26D778DC00DDB32A /* WolfBase in Frameworks */ = {isa = PBXBuildFile; productRef = 796FE5DA26D778DC00DDB32A /* WolfBase */; };
 		797BB15E25A7E75900FD5140 /* wally_transaction.h in Headers */ = {isa = PBXBuildFile; fileRef = 797BB15425A7E75900FD5140 /* wally_transaction.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		797BB15F25A7E75900FD5140 /* wally_bip39.h in Headers */ = {isa = PBXBuildFile; fileRef = 797BB15525A7E75900FD5140 /* wally_bip39.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -40,6 +50,16 @@
 		030A63D625035ED900A1D27E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		030A63DB25035EDA00A1D27E /* BCWallyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BCWallyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		030A63E225035EDA00A1D27E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7964076D2756177900BECF76 /* WallyExtKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallyExtKey.swift; sourceTree = "<group>"; };
+		7964076F275617B600BECF76 /* WallyECKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallyECKey.swift; sourceTree = "<group>"; };
+		79640771275617D000BECF76 /* WallyHash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallyHash.swift; sourceTree = "<group>"; };
+		796407732756180C00BECF76 /* WallyBIP39.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallyBIP39.swift; sourceTree = "<group>"; };
+		796407752756194A00BECF76 /* WallyAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallyAddress.swift; sourceTree = "<group>"; };
+		7964077727561B9300BECF76 /* WallyBase58.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallyBase58.swift; sourceTree = "<group>"; };
+		7964077927561C5900BECF76 /* WallyWIF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallyWIF.swift; sourceTree = "<group>"; };
+		7964077B27561CA200BECF76 /* WallyPSBT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallyPSBT.swift; sourceTree = "<group>"; };
+		7964077D27561D2E00BECF76 /* WallyTx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallyTx.swift; sourceTree = "<group>"; };
+		7964077F27561F5A00BECF76 /* WallyScript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallyScript.swift; sourceTree = "<group>"; };
 		797BB15425A7E75900FD5140 /* wally_transaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wally_transaction.h; path = "../../build/arm64-apple-darwin/wallycore/include/wally_transaction.h"; sourceTree = "<group>"; };
 		797BB15525A7E75900FD5140 /* wally_bip39.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wally_bip39.h; path = "../../build/arm64-apple-darwin/wallycore/include/wally_bip39.h"; sourceTree = "<group>"; };
 		797BB15625A7E75900FD5140 /* wally_bip38.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wally_bip38.h; path = "../../build/arm64-apple-darwin/wallycore/include/wally_bip38.h"; sourceTree = "<group>"; };
@@ -100,6 +120,16 @@
 				030A63D525035ED900A1D27E /* BCWally.h */,
 				030A63D625035ED900A1D27E /* Info.plist */,
 				79EC702426D75B2200A3D4E9 /* WallyUtils.swift */,
+				796407732756180C00BECF76 /* WallyBIP39.swift */,
+				79640771275617D000BECF76 /* WallyHash.swift */,
+				7964076F275617B600BECF76 /* WallyECKey.swift */,
+				7964076D2756177900BECF76 /* WallyExtKey.swift */,
+				796407752756194A00BECF76 /* WallyAddress.swift */,
+				7964077727561B9300BECF76 /* WallyBase58.swift */,
+				7964077927561C5900BECF76 /* WallyWIF.swift */,
+				7964077B27561CA200BECF76 /* WallyPSBT.swift */,
+				7964077D27561D2E00BECF76 /* WallyTx.swift */,
+				7964077F27561F5A00BECF76 /* WallyScript.swift */,
 				79E967132755E9C3000621AD /* Network.swift */,
 			);
 			path = BCWally;
@@ -262,8 +292,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79640772275617D000BECF76 /* WallyHash.swift in Sources */,
 				79E967142755E9C3000621AD /* Network.swift in Sources */,
+				7964077A27561C5900BECF76 /* WallyWIF.swift in Sources */,
+				79640770275617B600BECF76 /* WallyECKey.swift in Sources */,
+				796407762756194A00BECF76 /* WallyAddress.swift in Sources */,
+				796407742756180C00BECF76 /* WallyBIP39.swift in Sources */,
+				7964078027561F5A00BECF76 /* WallyScript.swift in Sources */,
+				7964077827561B9300BECF76 /* WallyBase58.swift in Sources */,
+				7964076E2756177A00BECF76 /* WallyExtKey.swift in Sources */,
+				7964077C27561CA200BECF76 /* WallyPSBT.swift in Sources */,
 				79EC702526D75B2200A3D4E9 /* WallyUtils.swift in Sources */,
+				7964077E27561D2E00BECF76 /* WallyTx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

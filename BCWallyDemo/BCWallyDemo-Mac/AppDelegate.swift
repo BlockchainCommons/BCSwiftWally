@@ -15,9 +15,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     var window: NSWindow!
 
-
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        wally_init(0);
+        Wally.initialize()
         let data = Data(hex: "1673a0b7da12c9a7252f5c93a1376a8f")!
         let bip39 = Wally.bip39Encode(data: data)
         print(bip39)

@@ -13,11 +13,10 @@ import WolfBase
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        wally_init(0);
+        Wally.initialize()
         let data = Data(hex: "1673a0b7da12c9a7252f5c93a1376a8f")!
         let bip39 = Wally.bip39Encode(data: data)
-        print(bip39)
-        // biology other combine reflect clutch squeeze net twist neck answer survey butter
+        precondition(bip39 == "biology other combine reflect clutch squeeze net twist neck answer survey butter")
         return true
     }
 

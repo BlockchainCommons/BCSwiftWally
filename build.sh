@@ -332,8 +332,8 @@ build_all()
   CONTEXT=subshell
 #   get_dependencies
 #   build_c_libraries
-#   build_swift_frameworks
-#   lipo_swift_frameworks
+  build_swift_frameworks
+  lipo_swift_frameworks
   build_swift_xcframeworks
 )
 

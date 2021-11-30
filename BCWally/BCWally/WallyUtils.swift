@@ -17,6 +17,14 @@ public typealias WallyPSBTInput = wally_psbt_input
 public typealias WallyPSBTOutput = wally_psbt_output
 
 public enum Wally {
+    private static var _initialized: Bool = {
+        wally_init(0)
+        return true
+    }()
+    
+    public static func initialize() {
+        _ = _initialized
+    }
 }
 
 extension Wally {

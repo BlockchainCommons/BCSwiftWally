@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		030A63DC25035EDA00A1D27E /* BCWally.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 030A63D225035ED900A1D27E /* BCWally.framework */; };
 		030A63E325035EDA00A1D27E /* BCWally.h in Headers */ = {isa = PBXBuildFile; fileRef = 030A63D525035ED900A1D27E /* BCWally.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		795F8C2526F1E70F009D90FB /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 795F8C2426F1E70F009D90FB /* CryptoSwift */; };
 		796FE5DB26D778DC00DDB32A /* WolfBase in Frameworks */ = {isa = PBXBuildFile; productRef = 796FE5DA26D778DC00DDB32A /* WolfBase */; };
 		797BB15E25A7E75900FD5140 /* wally_transaction.h in Headers */ = {isa = PBXBuildFile; fileRef = 797BB15425A7E75900FD5140 /* wally_transaction.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		797BB15F25A7E75900FD5140 /* wally_bip39.h in Headers */ = {isa = PBXBuildFile; fileRef = 797BB15525A7E75900FD5140 /* wally_bip39.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -21,7 +20,7 @@
 		797BB16525A7E75900FD5140 /* wally_bip32.h in Headers */ = {isa = PBXBuildFile; fileRef = 797BB15B25A7E75900FD5140 /* wally_bip32.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		797BB16625A7E75900FD5140 /* wally_script.h in Headers */ = {isa = PBXBuildFile; fileRef = 797BB15C25A7E75900FD5140 /* wally_script.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		797BB16725A7E75900FD5140 /* wally_core.h in Headers */ = {isa = PBXBuildFile; fileRef = 797BB15D25A7E75900FD5140 /* wally_core.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		79865C4726DEF38600897441 /* Flexer in Frameworks */ = {isa = PBXBuildFile; productRef = 79865C4626DEF38600897441 /* Flexer */; };
+		79E967142755E9C3000621AD /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E967132755E9C3000621AD /* Network.swift */; };
 		79EC702526D75B2200A3D4E9 /* WallyUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EC702426D75B2200A3D4E9 /* WallyUtils.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +51,7 @@
 		797BB15B25A7E75900FD5140 /* wally_bip32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wally_bip32.h; path = "../../build/arm64-apple-darwin/wallycore/include/wally_bip32.h"; sourceTree = "<group>"; };
 		797BB15C25A7E75900FD5140 /* wally_script.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wally_script.h; path = "../../build/arm64-apple-darwin/wallycore/include/wally_script.h"; sourceTree = "<group>"; };
 		797BB15D25A7E75900FD5140 /* wally_core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wally_core.h; path = "../../build/arm64-apple-darwin/wallycore/include/wally_core.h"; sourceTree = "<group>"; };
+		79E967132755E9C3000621AD /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		79EC702426D75B2200A3D4E9 /* WallyUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallyUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,9 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79865C4726DEF38600897441 /* Flexer in Frameworks */,
 				796FE5DB26D778DC00DDB32A /* WolfBase in Frameworks */,
-				795F8C2526F1E70F009D90FB /* CryptoSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +101,7 @@
 				030A63D525035ED900A1D27E /* BCWally.h */,
 				030A63D625035ED900A1D27E /* Info.plist */,
 				79EC702426D75B2200A3D4E9 /* WallyUtils.swift */,
+				79E967132755E9C3000621AD /* Network.swift */,
 			);
 			path = BCWally;
 			sourceTree = "<group>";
@@ -180,8 +179,6 @@
 			name = BCWally;
 			packageProductDependencies = (
 				796FE5DA26D778DC00DDB32A /* WolfBase */,
-				79865C4626DEF38600897441 /* Flexer */,
-				795F8C2426F1E70F009D90FB /* CryptoSwift */,
 			);
 			productName = BCWally;
 			productReference = 030A63D225035ED900A1D27E /* BCWally.framework */;
@@ -234,8 +231,6 @@
 			mainGroup = 030A63C825035ED900A1D27E;
 			packageReferences = (
 				796FE5D926D778DC00DDB32A /* XCRemoteSwiftPackageReference "WolfBase" */,
-				79865C4526DEF38600897441 /* XCRemoteSwiftPackageReference "Flexer" */,
-				795F8C2326F1E70F009D90FB /* XCRemoteSwiftPackageReference "CryptoSwift" */,
 			);
 			productRefGroup = 030A63D325035ED900A1D27E /* Products */;
 			projectDirPath = "";
@@ -269,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79E967142755E9C3000621AD /* Network.swift in Sources */,
 				79EC702526D75B2200A3D4E9 /* WallyUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -549,14 +545,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		795F8C2326F1E70F009D90FB /* XCRemoteSwiftPackageReference "CryptoSwift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/krzyzanowskim/CryptoSwift.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.4.1;
-			};
-		};
 		796FE5D926D778DC00DDB32A /* XCRemoteSwiftPackageReference "WolfBase" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/WolfMcNally/WolfBase.git";
@@ -565,31 +553,13 @@
 				minimumVersion = 2.3.3;
 			};
 		};
-		79865C4526DEF38600897441 /* XCRemoteSwiftPackageReference "Flexer" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ChimeHQ/Flexer.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		795F8C2426F1E70F009D90FB /* CryptoSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 795F8C2326F1E70F009D90FB /* XCRemoteSwiftPackageReference "CryptoSwift" */;
-			productName = CryptoSwift;
-		};
 		796FE5DA26D778DC00DDB32A /* WolfBase */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 796FE5D926D778DC00DDB32A /* XCRemoteSwiftPackageReference "WolfBase" */;
 			productName = WolfBase;
-		};
-		79865C4626DEF38600897441 /* Flexer */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 79865C4526DEF38600897441 /* XCRemoteSwiftPackageReference "Flexer" */;
-			productName = Flexer;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

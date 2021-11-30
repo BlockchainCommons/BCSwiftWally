@@ -74,7 +74,7 @@ build_clibwally()
 (
   build_init wallycore $@
 
-  pushd ${DEPS_ROOT}/libwally-core
+  pushd ${DEPS_ROOT}/bc-libwally-core
 
   ./tools/cleanup.sh
   ./tools/autogen.sh
@@ -330,10 +330,10 @@ build_swift_xcframeworks()
 build_all()
 (
   CONTEXT=subshell
-  get_dependencies
-  build_c_libraries
-  build_swift_frameworks
-  lipo_swift_frameworks
+#   get_dependencies
+#   build_c_libraries
+#   build_swift_frameworks
+#   lipo_swift_frameworks
   build_swift_xcframeworks
 )
 

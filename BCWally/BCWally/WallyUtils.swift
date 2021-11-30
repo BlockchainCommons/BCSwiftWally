@@ -8,6 +8,14 @@
 import Foundation
 @_implementationOnly import WolfBase
 
+public typealias WallyTx = UnsafeMutablePointer<wally_tx>
+public typealias WallyTxInput = UnsafeMutablePointer<wally_tx_input>
+public typealias WallyTxOutput = UnsafeMutablePointer<wally_tx_output>
+public typealias WallyExtKey = ext_key
+public typealias WallyPSBT = UnsafeMutablePointer<wally_psbt>
+public typealias WallyPSBTInput = wally_psbt_input
+public typealias WallyPSBTOutput = wally_psbt_output
+
 public enum Wally {
 }
 
@@ -147,10 +155,10 @@ extension Wally {
 }
 
 extension Wally {
-    public static func hdKey(bip39Seed seed: BIP39.Seed, network: Network) -> WallyExtKey? {
+    public static func hdKey(bip39Seed seedData: Data, network: Network) -> WallyExtKey? {
         let flags = network.wallyBIP32Version(isPrivate: true)
         var key = WallyExtKey()
-        let result = seed.data.withUnsafeByteBuffer { buf in
+        let result = seedData.withUnsafeByteBuffer { buf in
             bip32_key_from_seed(buf.baseAddress, buf.count, flags, 0, &key)
         }
         guard result == WALLY_OK else {
@@ -267,10 +275,6 @@ extension WallyExtKey: CustomStringConvertible {
 
     public var isPrivate: Bool {
         priv_key.0 == BIP32_FLAG_KEY_PRIVATE
-    }
-
-    public var keyType: KeyType {
-        KeyType(isPrivate: isPrivate)
     }
 
     public var isMaster: Bool {

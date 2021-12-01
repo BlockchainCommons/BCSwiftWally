@@ -1,10 +1,10 @@
-# BCWally
+# BCSwiftWally
 
 Thin Swift wrapper around [LibWally](https://github.com/ElementsProject/libwally-core), a collection of useful primitives for cryptocurrency wallets.
 
-This is a fork of [LibWally Swift](https://github.com/blockchain/libwally-swift). It has a new build system for building a universal XCFramework for use with MacOSX, Mac Catalyst, iOS devices, and the iOS simulator across Intel and Apple Silicon (ARM).
+This was originally fork of [LibWally Swift](https://github.com/blockchain/libwally-swift), but since has greatly diverged. It has a new build system for building a universal XCFramework for use with MacOSX, Mac Catalyst, iOS devices, and the iOS simulator across Intel and Apple Silicon (ARM).
 
-For higher-level functions and more, see [BCFoundation](https://github.com/BlockchainCommons/BCFoundation).
+For higher-level functions and more, see [BCSwiftFoundation](https://github.com/BlockchainCommons/BCSwiftFoundation).
 
 ## Dependencies
 
@@ -15,8 +15,8 @@ $ brew install autoconf autogen gsed
 ## Build
 
 ```sh
-$ git clone https://github.com/blockchaincommons/BCWally.git
-$ cd BCWally
+$ git clone https://github.com/blockchaincommons/BCSwiftWally.git
+$ cd BCSwiftWally
 $ ./build.sh
 ```
 

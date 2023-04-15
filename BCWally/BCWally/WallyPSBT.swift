@@ -11,7 +11,7 @@ extension Wally {
     public static func psbt(from data: Data) -> WallyPSBT? {
         data.withUnsafeByteBuffer { bytes in
             var p: WallyPSBT? = nil
-            guard wally_psbt_from_bytes(bytes.baseAddress!, data.count, &p) == WALLY_OK else {
+            guard wally_psbt_from_bytes(bytes.baseAddress!, data.count, 0, &p) == WALLY_OK else {
                 return nil
             }
             return p!
@@ -36,7 +36,7 @@ extension Wally {
     
     public static func finalized(psbt: WallyPSBT) -> WallyPSBT? {
         let final = copy(psbt: psbt)
-        guard wally_psbt_finalize(final) == WALLY_OK else {
+        guard wally_psbt_finalize(final, 0) == WALLY_OK else {
             return nil
         }
         return final
@@ -44,7 +44,7 @@ extension Wally {
 
     public static func finalizedPSBT(psbt: WallyPSBT) -> WallyTx? {
         var output: WallyTx!
-        guard wally_psbt_extract(psbt, &output) == WALLY_OK else {
+        guard wally_psbt_extract(psbt, 0, &output) == WALLY_OK else {
             return nil
         }
         return output

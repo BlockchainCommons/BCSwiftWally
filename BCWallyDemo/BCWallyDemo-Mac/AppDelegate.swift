@@ -7,7 +7,6 @@
 
 import Cocoa
 import SwiftUI
-import BCWally
 import WolfBase
 
 @NSApplicationMain
@@ -16,12 +15,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var window: NSWindow!
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        Wally.initialize()
-        let data = Data(hex: "1673a0b7da12c9a7252f5c93a1376a8f")!
-        let bip39 = Wally.bip39Encode(data: data)
-        print(bip39)
-        // biology other combine reflect clutch squeeze net twist neck answer survey butter
-
         // Create the SwiftUI view that provides the window contents.
         let contentView = ContentView()
 

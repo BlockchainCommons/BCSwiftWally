@@ -23,6 +23,8 @@
 		03D92E642503B6C9005BA9A7 /* BCWally.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D92E632503B6C9005BA9A7 /* BCWally.xcframework */; };
 		03D92E652503B6C9005BA9A7 /* BCWally.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 03D92E632503B6C9005BA9A7 /* BCWally.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		7964076C2755F27800BECF76 /* WolfBase in Frameworks */ = {isa = PBXBuildFile; productRef = 7964076B2755F27800BECF76 /* WolfBase */; };
+		79A938B529EA29E90075C226 /* WallyDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A938B429EA29E90075C226 /* WallyDemo.swift */; };
+		79A938B629EA2A080075C226 /* WallyDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A938B429EA29E90075C226 /* WallyDemo.swift */; };
 		79E967172755EECD000621AD /* WolfBase in Frameworks */ = {isa = PBXBuildFile; productRef = 79E967162755EECD000621AD /* WolfBase */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +72,7 @@
 		0329398E25377C2200E52AD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0329398F25377C2200E52AD5 /* BCWallyDemo_Mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BCWallyDemo_Mac.entitlements; sourceTree = "<group>"; };
 		03D92E632503B6C9005BA9A7 /* BCWally.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = BCWally.xcframework; path = ../build/BCWally.xcframework; sourceTree = "<group>"; };
+		79A938B429EA29E90075C226 /* WallyDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallyDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +100,7 @@
 		030A640F25038A4300A1D27E = {
 			isa = PBXGroup;
 			children = (
+				79A938B429EA29E90075C226 /* WallyDemo.swift */,
 				030A641A25038A4300A1D27E /* BCWallyDemo */,
 				0329398125377C2000E52AD5 /* BCWallyDemo-Mac */,
 				030A641925038A4300A1D27E /* Products */,
@@ -278,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79A938B529EA29E90075C226 /* WallyDemo.swift in Sources */,
 				030A641C25038A4300A1D27E /* AppDelegate.swift in Sources */,
 				030A641E25038A4300A1D27E /* SceneDelegate.swift in Sources */,
 				030A642025038A4300A1D27E /* ContentView.swift in Sources */,
@@ -288,6 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79A938B629EA2A080075C226 /* WallyDemo.swift in Sources */,
 				0329398525377C2000E52AD5 /* ContentView.swift in Sources */,
 				0329398325377C2000E52AD5 /* AppDelegate.swift in Sources */,
 			);

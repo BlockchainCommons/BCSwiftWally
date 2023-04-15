@@ -30,6 +30,7 @@
 		797BB16525A7E75900FD5140 /* wally_bip32.h in Headers */ = {isa = PBXBuildFile; fileRef = 797BB15B25A7E75900FD5140 /* wally_bip32.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		797BB16625A7E75900FD5140 /* wally_script.h in Headers */ = {isa = PBXBuildFile; fileRef = 797BB15C25A7E75900FD5140 /* wally_script.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		797BB16725A7E75900FD5140 /* wally_core.h in Headers */ = {isa = PBXBuildFile; fileRef = 797BB15D25A7E75900FD5140 /* wally_core.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79A938B329EA1D840075C226 /* wally_map.h in Headers */ = {isa = PBXBuildFile; fileRef = 79A938B229EA1D840075C226 /* wally_map.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		79E967142755E9C3000621AD /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E967132755E9C3000621AD /* Network.swift */; };
 		79EC702526D75B2200A3D4E9 /* WallyUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EC702426D75B2200A3D4E9 /* WallyUtils.swift */; };
 /* End PBXBuildFile section */
@@ -70,6 +71,7 @@
 		797BB15B25A7E75900FD5140 /* wally_bip32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wally_bip32.h; path = "../../build/arm64-apple-darwin/wallycore/include/wally_bip32.h"; sourceTree = "<group>"; };
 		797BB15C25A7E75900FD5140 /* wally_script.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wally_script.h; path = "../../build/arm64-apple-darwin/wallycore/include/wally_script.h"; sourceTree = "<group>"; };
 		797BB15D25A7E75900FD5140 /* wally_core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wally_core.h; path = "../../build/arm64-apple-darwin/wallycore/include/wally_core.h"; sourceTree = "<group>"; };
+		79A938B229EA1D840075C226 /* wally_map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wally_map.h; path = "../../build/arm64-apple-darwin/wallycore/include/wally_map.h"; sourceTree = "<group>"; };
 		79E967132755E9C3000621AD /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		79EC702426D75B2200A3D4E9 /* WallyUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallyUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -159,6 +161,7 @@
 				797BB15525A7E75900FD5140 /* wally_bip39.h */,
 				797BB15D25A7E75900FD5140 /* wally_core.h */,
 				797BB15825A7E75900FD5140 /* wally_crypto.h */,
+				79A938B229EA1D840075C226 /* wally_map.h */,
 				797BB15925A7E75900FD5140 /* wally_psbt.h */,
 				797BB15C25A7E75900FD5140 /* wally_script.h */,
 				797BB15A25A7E75900FD5140 /* wally_symmetric.h */,
@@ -181,6 +184,7 @@
 				797BB16025A7E75900FD5140 /* wally_bip38.h in Headers */,
 				797BB16725A7E75900FD5140 /* wally_core.h in Headers */,
 				797BB16425A7E75900FD5140 /* wally_symmetric.h in Headers */,
+				79A938B329EA1D840075C226 /* wally_map.h in Headers */,
 				797BB15E25A7E75900FD5140 /* wally_transaction.h in Headers */,
 				797BB15F25A7E75900FD5140 /* wally_bip39.h in Headers */,
 				797BB16325A7E75900FD5140 /* wally_psbt.h in Headers */,
